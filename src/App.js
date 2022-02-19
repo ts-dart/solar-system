@@ -7,11 +7,13 @@ import './App.css';
 class App extends React.Component {
   render() {
     return (
-      <section className="main">
+      <div>
         <Header />
-        <SolarSystem />
-        <Missions />
-      </section>
+        <main>
+          <SolarSystem />
+          <Missions />
+        </main>
+      </div>
     );
   }
 }
