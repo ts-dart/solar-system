@@ -3,6 +3,7 @@ body {
 
   /* stylelint-disable-next-line order/properties-alphabetical-order */
   background-size: 100% auto;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* div img {

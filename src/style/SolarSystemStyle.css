@@ -1,7 +1,7 @@
 #solar-system {
-  width: 70%;
-  height: 500px;
-  margin: 100px auto 0px;
+  width: 80%;
+  height: 570px;
+  margin: 75px auto 0px;
   background-color: #000000;
   border: 1px solid #292622;
   border-radius: 5px;
@@ -10,14 +10,15 @@
 }
 
 #sol {
-  width: 35px;
-  height: 35px;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
   background-color: white;
   position: absolute;
-  top: calc(50% - 50px);
+  top: calc(50% - 55px);
   left: calc(50% - 20px);
   animation: giro-sol 10s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes giro-sol {
@@ -35,70 +36,79 @@
   background-color: white;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
+  cursor: pointer;
 }
 
 .mercurio {
   width: 10px;
   height: 10px;
-  top: 50%;
+  top: 49%;
   left: 50%;
   animation: orbita-mercurio 4s linear infinite;
+  cursor: pointer;
 }
 
 .venus {
   width: 15px;
   height: 15px;
-  top: 50%;
+  top: 49%;
   left: 50%;
   animation: orbita-venus 6s linear infinite;
+  cursor: pointer;
 }
 
 .terra {
   width: 20px;
   height: 20px;
-  top: 50%;
+  top: 49%;
   left: 50%;
   animation: orbita-terra 8s linear infinite;
+  cursor: pointer;
 }
 
 .marte {
   width: 17px;
   height: 17px;
-  top: 50%;
+  top: 49%;
   left: 50%;
   animation: orbita-marte 10s linear infinite;
+  cursor: pointer;
 }
 
 .jupiter {
   width: 17px;
   height: 17px;
-  top: 50%;
+  top: 49%;
   left: 50%;
   animation: orbita-jupiter 10s linear infinite;
+  cursor: pointer;
 }
 
 .saturno {
   width: 17px;
   height: 17px;
-  top: 50%;
+  top: 49%;
   left: 50%;
   animation: orbita-saturno 10s linear infinite;
+  cursor: pointer;
 }
 
 .urano {
   width: 17px;
   height: 17px;
-  top: 50%;
+  top: 49%;
   left: 50%;
   animation: orbita-urano 10s linear infinite;
+  cursor: pointer;
 }
 
 .netuno {
   width: 17px;
   height: 17px;
-  top: 50%;
+  top: 49%;
   left: 50%;
   animation: orbita-netuno 10s linear infinite;
+  cursor: pointer;
 }
 
 @keyframes orbita-mercurio {
@@ -148,27 +158,58 @@
 
 @keyframes orbita-saturno {
   0% {
-    transform: rotate(0deg) translateX(160px) rotate(0deg);
+    transform: rotate(0deg) translateX(190px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(160px) rotate(-360deg);
+    transform: rotate(360deg) translateX(190px) rotate(-360deg);
   }
 }
 
 @keyframes orbita-urano {
   0% {
-    transform: rotate(0deg) translateX(180px) rotate(0deg);
+    transform: rotate(0deg) translateX(220px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(180px) rotate(-360deg);
+    transform: rotate(360deg) translateX(220px) rotate(-360deg);
   }
 }
 
 @keyframes orbita-netuno {
   0% {
-    transform: rotate(0deg) translateX(200px) rotate(0deg);
+    transform: rotate(0deg) translateX(250px) rotate(0deg);
   }
   100% {
-    transform: rotate(360deg) translateX(200px) rotate(-360deg);
+    transform: rotate(360deg) translateX(250px) rotate(-360deg);
   }
+}
+
+#show-object-name {
+  width: 400px;
+  height: 25px;
+  color: #292622;
+  padding: 15px;
+  font-weight: bolder;
+  font-size: 12px;
+}
+
+#btn-control-speed {
+  width: 170px;
+  height: 25px;
+  color: #292622;
+  padding: 15px;
+  font-weight: bolder;
+  background-color: #000000;
+  border: 0px solid #000000;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#btn-control-speed:hover {
+  color: white;
+}
+
+#painel {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
