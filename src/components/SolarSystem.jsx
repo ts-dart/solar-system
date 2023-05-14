@@ -103,8 +103,13 @@ export default class SolarSystem extends React.Component {
           ))}
           {this.state.showStarData 
             ? <StarData
-                name={stars[this.state.selectedStar].name}
                 handleShowStarData={(bool) => this.handleShowStarData(bool)}
+                name={stars[this.state.selectedStar].name}
+                images={stars[this.state.selectedStar].images}
+                type={stars[this.state.selectedStar].type}
+                resume={stars[this.state.selectedStar].resume}
+                features={stars[this.state.selectedStar].features}
+                geography={stars[this.state.selectedStar].geography}
               />
             : null }
         </div>

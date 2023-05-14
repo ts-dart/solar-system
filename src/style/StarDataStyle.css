@@ -1,4 +1,4 @@
-#star-data-content {
+#star-data-content-container {
   position: absolute;
   top: 0px;
   width: 100%;
@@ -6,5 +6,46 @@
   background-color: #000000;
   color: white;
   padding: 10px;
-  overflow: hidden;
+  overflow: auto;
+}
+
+#data-content {
+  width: 90%;
+  z-index: 0;
+}
+
+#button-close-star-data-content {
+  position: absolute;
+  top: 15px;
+  left: 1040px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  cursor: pointer;
+  color: white;
+  font-size: 22px;
+  z-index: 1;
+}
+
+#data-content-div-object-resume-star-data-content p {
+  text-align: justify;
+}
+
+#div-object-features-star-data-content {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+#div-object-features-star-data-content p {
+  margin-left: 5px;
+}
+
+#div-object-images-star-data-content img {
+  width: 200px;
+}
+
+.div-in-row {
+  display: flex;
+  flex-flow: row wrap;
 }
