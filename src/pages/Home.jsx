@@ -10,26 +10,21 @@ export default class Home extends Component {
   }
 
   async componentDidMount() {
-    // const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=DfGAgSgjHyOLIH1UQFY36tUt14IWtsVr1N4pxJz7');
+    /* const response = await fetch('https://api.nasa.gov/planetary/apod?api_key=DfGAgSgjHyOLIH1UQFY36tUt14IWtsVr1N4pxJz7');
     const data = await response.json();
-
-    // eslint-disable-next-line react/no-did-mount-set-state
-    this.setState({ urlImage: data.url });
+    this.setState({ urlImage: data.url }); */
   }
 
   componentDidUpdate() {
-    console.log('rodou update');
-    const { urlImage } = this.state;
-    // document.body.style.backgroundImage = `url(${urlImage})`;
+    //pass
   }
 
   render() {
     return (
       <>
-        <Header />
+        <Header title='\ Tela inicial'/>
         <main>
-          <SolarSystem />
-          {/* <Missions /> */}
+          testenaod
         </main>
       </>
     );
