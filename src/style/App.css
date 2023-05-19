@@ -3,12 +3,12 @@ body {
 
   /* stylelint-disable-next-line order/properties-alphabetical-order */
   background-size: 100% auto;
-  font-family: "ProductSans-Regular", "Arial";
+  font-family: "Exo-Regular", "Arial";
 }
 
 @font-face {
-  src: url(../assets/Google-sans-Font-Family/ProductSans-Regular.ttf);
-  font-family: 'ProductSans-Regular';    
+  src: url(../assets/Exo/Exo-Regular.ttf);
+  font-family: 'Exo-Regular';    
   font-weight: normal;
 }
 

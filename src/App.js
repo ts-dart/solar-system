@@ -5,6 +5,7 @@ import './style/App.css';
 import './style/HeaderStyle.css';
 import './style/SolarSystemStyle.css';
 import './style/StarDataStyle.css';
+import './style/HomeStyle.css';
 
 class App extends React.Component {
   render() {

@@ -1,0 +1,61 @@
+#div-home-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 170px auto 0px;
+  width: 90%;
+  height: 350px;
+}
+
+#div-h1-home-animation {
+  display: flex;
+  flex-flow: row wrap;
+  color: white;
+  font-size: 32px;
+  overflow: hidden;
+  animation: reveal 1s;
+}
+
+#div-h1-home-animation h1 {
+  margin: 0px 12px 0px 0px;
+}
+
+@keyframes reveal {
+  0% {
+    opacity: 0; /* Começar com a letra invisível */
+    transform: translateY(-50px); /* Mover a letra para cima */
+  }
+  100% {
+    opacity: 1; /* A letra fica visível */
+    transform: translateY(0); /* A letra volta à posição original */
+  }
+}
+
+#div-p-presentation {
+  display: flex;
+  flex-flow: row nowrap;
+  color: white;
+  font-size: 18px;
+}
+
+#div-p-presentation button {
+  border: 1px solid #000000;
+  background-color: #000000;
+  color: #9d9488;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Exo-Regular", "Arial";
+}
+
+#div-p-presentation button:hover {
+  background-color: rgba(36, 35, 35, 0.507);
+}
+
+#div-p-presentation a {
+  padding-top: 14px;
+}
+
+
+
+

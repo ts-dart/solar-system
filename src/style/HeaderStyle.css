@@ -13,16 +13,16 @@ header {
 }
 
 header img {
-  margin: 0px 20px 0px 20px;
+  margin: 0px 20px 0px 0px;
   width: 60px
 }
 
 header nav {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0px 20px;
-  width: 18%;
+  width: 97%;
 }
 
 header nav button {
@@ -33,7 +33,7 @@ header nav button {
   cursor: pointer;
   padding: 10px;
   border-radius: 5px;
-  font-family: "ProductSans-Regular", "Arial";;
+  font-family: "Exo-Regular", "Arial";
 }
 
 header nav button:hover {
@@ -42,12 +42,45 @@ header nav button:hover {
 }
 
 #div-img-title {
-  width: 50%;
+  width: 70%;
   display: flex;
   flex-flow: row nowrap;
   color: white;
   font-size: 10px;
-  align-items: center
+  align-items: center;
+  font-weight: normal;
+}
+
+#div-container {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin: 0px 20px;
+  width: 97%;
+}
+
+#div-feedback-contacts {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 25%;
+}
+
+#div-feedback-contacts button {
+  border: 1px solid #9d9488;
+  background-color: #000000;
+  padding: 6px 12px;
+  color: #9d9488;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Exo-Regular", "Arial";
+}
+
+#div-feedback-contacts button:hover {
+  border: 1px solid white;
+  background-color: white;
+  color: #000000;
 }
 
 .selected-nav {
