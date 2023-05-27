@@ -59,30 +59,45 @@ header nav button:hover {
   width: 97%;
 }
 
-#div-feedback-contacts {
+#div-feedback-contacts-content {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   width: 25%;
 }
 
-#div-feedback-contacts button {
+#div-feedback-contacts-content button {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
   border: 1px solid #9d9488;
   background-color: #000000;
   padding: 6px 12px;
   color: #9d9488;
-  font-size: 14px;
+  font-size: 12px;
   border-radius: 5px;
   cursor: pointer;
   font-family: "Exo-Regular", "Arial";
 }
 
-#div-feedback-contacts button:hover {
+#div-feedback-contacts-content button:hover {
   border: 1px solid white;
-  background-color: white;
-  color: #000000;
+  color: white;
+}
+
+#div-feedback-contacts-content a {
+  text-decoration: none;
+}
+
+#div-feedback-contacts-content button p {
+  margin: 0px;
 }
 
 .selected-nav {
   border-bottom: 2px solid white;
+}
+
+.img-logo-contact {
+  width: 20px;
+  margin-right: 5px;
 }

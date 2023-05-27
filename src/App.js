@@ -6,6 +6,7 @@ import './style/HeaderStyle.css';
 import './style/SolarSystemStyle.css';
 import './style/StarDataStyle.css';
 import './style/HomeStyle.css';
+import './style/SendFeedbackStyle.css';
 
 class App extends React.Component {
   render() {

@@ -11,14 +11,14 @@ export default class SolarSystem extends React.Component {
       pasObjectName: 'Passe o mouse sobre um dos círculos',
       textButtonVel: 'Diminuir velocidade',
       slower: false,
-      showStarData: false,
+      showStarDataComponent: false,
       selectedStar: 0,
     };
   }
 
-  handleShowStarData(bool) {
-    if (bool) this.setState({ showStarData: true });
-    else if (!bool) this.setState({ showStarData: false });
+  handleShowStarDataComponent(bool) {
+    if (bool) this.setState({ showStarDataComponent: true });
+    else if (!bool) this.setState({ showStarDataComponent: false });
   }
 
   handleSpeedSystem() {
@@ -70,7 +70,7 @@ export default class SolarSystem extends React.Component {
               })
             }}
             onClick={() => {
-              this.handleShowStarData(true);
+              this.handleShowStarDataComponent(true);
               this.setState({ selectedStar: 0 })
             }}
           ></div>
@@ -95,15 +95,15 @@ export default class SolarSystem extends React.Component {
                     });
                   }}
                   onClick={() => {
-                    this.handleShowStarData(true);
+                    this.handleShowStarDataComponent(true);
                     this.setState({ selectedStar: index });
                   }}
                 ></div>
               : null    
           ))}
-          {this.state.showStarData 
+          {this.state.showStarDataComponent 
             ? <StarData
-                handleShowStarData={(bool) => this.handleShowStarData(bool)}
+                handleShowStarDataComponent={(param) => this.handleShowStarDataComponent(param)}
                 name={stars[this.state.selectedStar].name}
                 images={stars[this.state.selectedStar].images}
                 type={stars[this.state.selectedStar].type}

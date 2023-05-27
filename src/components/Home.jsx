@@ -36,7 +36,7 @@ export default class Home extends React.Component {
         setTimeout(() => {
           updatedMsg = [...updatedMsg, word];
           this.setState({ msg: updatedMsg });
-        }, 100 + index * 100);
+        }, 200 + index * 200);
       });
     }, 5000);
   }
@@ -53,7 +53,6 @@ export default class Home extends React.Component {
               key={index}
               style={{
                 color: '#9d9488',
-                animation: `reveal ${1}s`
               }}
             >
               {word}
@@ -61,7 +60,12 @@ export default class Home extends React.Component {
           ))}
         </div>
         <div id='div-p-presentation'>
-          <p>Este e o projeto de sistema solar desenvolvido para o meu portfolio.</p>
+          <p>
+            Este é o meu projeto de sistema solar desenvolvido para o meu portfólio,
+            onde você pode explorar uma representação gráfica do sistema solar, 
+            bem como obter informações sobre missões espaciais e detalhes sobre 
+            objetos menores presentes nele.
+          </p>
           <Link to='/solarsystem'>
             <button>Explore o sistema solar</button>
           </Link>

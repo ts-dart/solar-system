@@ -3,7 +3,7 @@ import React from 'react';
 export default class StarData extends React.Component {
   render() {
     const {
-      handleShowStarData,
+      showStarDataComponent,
       name,
       images,
       type,
@@ -16,7 +16,7 @@ export default class StarData extends React.Component {
       <div id="star-data-content-container">
         <button
           id='button-close-star-data-content'
-          onClick={() => handleShowStarData(false)}
+          onClick={() => showStarDataComponent(false)}
         >
           x
         </button>
