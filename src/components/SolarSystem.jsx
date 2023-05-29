@@ -16,6 +16,11 @@ export default class SolarSystem extends React.Component {
     };
   }
 
+  componentDidMount() {
+    document.getElementById('solar-system')
+      .scrollIntoView({ behavior: 'smooth' });
+  }
+
   handleShowStarDataComponent(bool) {
     if (bool) this.setState({ showStarDataComponent: true });
     else if (!bool) this.setState({ showStarDataComponent: false });
